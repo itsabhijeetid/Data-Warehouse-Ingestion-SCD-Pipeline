@@ -1,9 +1,7 @@
 # Data-Warehouse-Ingestion-SCD-Pipeline
-Tools Used: Azure Data Factory, Databricks, PySpark, SQL, Event Hub, Delta Lake, Delta tables, Delta Live Tables, CDC, ADLS Gen2, Medallion Architecture, Star Schema
-• Built end-to-end real-time data pipelines using Azure Event Hub (Kafka) and Data Factory for scalable ride-event ingestion
-• Developed declarative data pipelines using Delta Live Tables (DLT) with PySpark for structured and maintainable streaming
-ETL workflows
-• Handled late-arriving data using watermarking and ensured fault tolerance via checkpointing
-• Implemented Medallion Architecture (Bronze, Silver, Gold) on Delta Lake, enabling CDC-based incremental processing and
-reliable data management
-• Designed Star Schema (fact & dimension tables) to support analytical workloads
+Tools used: Microsoft Fabric, Pipelines, Notebooks, OneLake, Lakehouse, Warehouse
+• Designed and implemented end-to-end data ingestion pipelines in Microsoft Fabric using Fabric Pipelines and Notebooks
+• Built SCD Type 1 and Type 2 pipelines along with incremental data loading strategies for efficient warehouse updates
+• Developed fault-tolerant ingestion workflows to handle partial pipeline failures, ensuring idempotent file processing and
+preventing duplicate data loads
+• Integrated Lakehouse and Warehouse layers in OneLake to support scalable data storage and analytical reporting
